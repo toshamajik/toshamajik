@@ -382,10 +382,10 @@ body #app .hud-radmir-info {
        color: #fff;
        font-weight: 600;
        position: absolute;
-       bottom: 3vh;
+       top: 2.5vh;
        right: 2.5vh;
        border-radius: 50%;
-       font-family:"GothamPro Black Italic";
+       font-family:"GothamPro Black";
        font-style:italic;
        font-size:1.3vh;
       }
