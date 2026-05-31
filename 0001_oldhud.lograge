@@ -367,7 +367,7 @@ body #app .hud-radmir-info {
 /* ------- Размер LOGO ------- */
 .Old-Fixed-Logo img {
   width: 18.5vh;
-  height: 5.2vh;
+  height: 6.3vh;
   margin-right: 3vh;
 }
 /* ------- Цвет X3-X2 ------- */
@@ -382,7 +382,7 @@ body #app .hud-radmir-info {
        color: #fff;
        font-weight: 600;
        position: absolute;
-       bottom: 1vh;
+       top: 2.5vh;
        right: 2.5vh;
        border-radius: 50%;
        font-family:"GothamPro Black Italic";
@@ -1458,7 +1458,7 @@ body .authorization { background: 0 0; }
             if (freezeValueEl) {
                 const formattedValue = String(value).padStart(1, '1');
         freezeValueEl.textContent = '100';
-                greenZoneEl.style.display = isVisible ? "flex" : "flex";
+                greenZoneEl.style.display = isVisible ? "" : "flex";
             }
         },
                 greenZone: (isVisible) => {
