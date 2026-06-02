@@ -52,6 +52,7 @@ function AddHud() {
                 padding: 12px 18px;
                 width: fit-content;
                 max-width: 420px;
+
                 opacity: 0;
                 transform: translateX(60px);
                 transition: all 0.3s ease;
@@ -329,9 +330,23 @@ function AddHud() {
 .Old-Fixed-HudBottom {
     z-index: -1;
 }
+
+#app .hud-radmir-wanted { 
+    display: none; 
+}
+
+body #app .hud-radmir-info { 
+    display: none;
+}
+
+.hud-hassle-map .map-mask { 
+    display: none; 
+}
+
 .Old-Fixed-Logo img, .Old-Fixed-HudTop {
     transform-origin: top right;
 }
+
 .Old-Fixed-HudTop {
     position: absolute;
     right: 1.4vw;
@@ -340,15 +355,19 @@ function AddHud() {
     flex-direction: column;
     align-items: flex-end;
 }
+
+/* ------- Высота лога от вверха ------- */
 .Old-Fixed-Logo {
     position: relative;
     margin-bottom: 3vh;
 }
+/* ------- Размер LOGO ------- */
 .Old-Fixed-Logo img {
   width: 20vh;
   height: 6vh;
   margin-right: 3vh;
 }
+/* ------- Цвет X3-X2 ------- */
 .Old-Fixed-Bonus{
     background: radial-gradient(93.1% 93.1% at 126.72% 6.9%, #eb00ff 0, #eb00ff00 100%), linear-gradient(129.39deg, #f5be09 30.88%, #e9651b 98.06%);
     width: 32px;
@@ -366,6 +385,8 @@ function AddHud() {
     font-style: italic;
     font-weight: 900
 }
+
+
 .Old-Fixed-Main, .Old-Fixed-Cash, .Wanted_row {
     align-items: center;
     display: flex;
@@ -487,18 +508,18 @@ function AddHud() {
 }
 .Old-Fixed-Param.health {
     margin-top: 0;
-    margin-left: 20px
+    margin-left: 1.89vh;
 }
 .Old-Fixed-Param.armour, .Old-Param-Values {
-    margin-left: 14px
+    margin-left: .93vh;
 }
 .Old-Fixed-Param.hunger {
-    margin-left: 1px
+    margin-left: 0.25vh;
 }
 .Old-Fixed-Param.breath {
-    margin-left: 3px
+    margin-left: 0px;
     display: none;
-}   
+}  
 .Old-Fixed-Param.health .Old-Progress__Values {
     background-color: #ed2e2e;
     box-shadow: #ed2e2e80 0 0 .46vh 0;
@@ -2202,4 +2223,3 @@ function showGameText(text = "LOGRAGE MODS HUD", duration = 8000) {
         console.error("error showGameText:", e);
     }
 }
-
