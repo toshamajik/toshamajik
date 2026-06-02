@@ -465,7 +465,7 @@ body #app .hud-radmir-info {
 .Old-Fixed-Param {
     display: flex;
     align-items: center;
-    margin-bottom: -3.5px;
+    margin-bottom: -1px;
     margin-top: .96vh;
 }
 .Old-Param-Progress, .Old-Progress__Values {
@@ -565,9 +565,8 @@ body #app .hud-radmir-info {
 }
 .Old-Fixed-Wanted_back {
     position: absolute;
-    right: -1.5vh;
-    top: 9vh;
-    z-index: -1;
+    right: 0;
+    top: 25px
 }
 .Wanted_row {
     display: flex;
