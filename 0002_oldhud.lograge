@@ -511,16 +511,16 @@ body #app .hud-radmir-info {
 }
 .Old-Fixed-Param.health {
     margin-top: 0;
-    margin-left: 1.89vh;
+    margin-left: 20px
 }
 .Old-Fixed-Param.armour, .Old-Param-Values {
-    margin-left: .1vh;
+    margin-left: 14px
 }
 .Old-Fixed-Param.hunger {
-    margin-left: -0.15vh;
+    margin-left: 1px
 }
 .Old-Fixed-Param.breath {
-    margin-left: 0px;
+    margin-left: 3px
     display: none;
 }  
 .Old-Fixed-Param.health .Old-Progress__Values {
