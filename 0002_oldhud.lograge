@@ -465,7 +465,7 @@ body #app .hud-radmir-info {
 .Old-Fixed-Param {
     display: flex;
     align-items: center;
-    margin-bottom: -2px;
+    margin-bottom: -3.5px;
     margin-top: .96vh;
 }
 .Old-Param-Progress, .Old-Progress__Values {
@@ -514,10 +514,10 @@ body #app .hud-radmir-info {
     margin-left: 1.89vh;
 }
 .Old-Fixed-Param.armour, .Old-Param-Values {
-    margin-left: .93vh;
+    margin-left: .1vh;
 }
 .Old-Fixed-Param.hunger {
-    margin-left: 0.25vh;
+    margin-left: -0.15vh;
 }
 .Old-Fixed-Param.breath {
     margin-left: 0px;
