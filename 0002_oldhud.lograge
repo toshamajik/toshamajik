@@ -371,24 +371,23 @@ body #app .hud-radmir-info {
 }
 /* ------- Цвет X3-X2 ------- */
 .Old-Fixed-Bonus{
-       background: radial-gradient(93.1% 93.1% at 126.72% 6.9%, #eb00ff 0, #eb00ff00 100%), linear-gradient(129.39deg, #f5be09 30.88%, #e9651b 98.06%);
-       width: 32px;
-       height: 32px;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       font-size: 16px;
-       color: #fff;
-       font-weight: 600;
-       position: absolute;
-       top: 3.3vh;
-       right: 2.5vh;
-       border-radius: 50%;
-       font-family:"GothamPro Black Italic";
-       font-style:italic;
-       font-size:1.3vh;
-      }
-
+    background: radial-gradient(93.1% 93.1% at 126.72% 6.9%, #eb00ff 0, #eb00ff00 100%), linear-gradient(129.39deg, #f5be09 30.88%, #e9651b 98.06%);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    top: 3.3vh;
+    right: 2.5vh;
+    border-radius: 50%;
+    font-family:"GothamPro Black Italic";
+    font-style:italic;
+    font-size:1.3vh;
+}
 
 .Old-Fixed-Main, .Old-Fixed-Cash, .Wanted_row {
     align-items: center;
@@ -542,21 +541,19 @@ body #app .hud-radmir-info {
     box-shadow: #ffffff80 0 0 5px 0;
 }
 .Old-Fixed-Param.health .old-param__icon{
-        margin-right: 14px;
-        margin-top: -1.4px
+    margin-right: 14px;
+    margin-top: -1.4px
       }
 .Old-Fixed-Param.armour .old-param__icon{
-        margin-right: 14px;
-        margin-top: 0px
+    margin-right: 14px;
+    margin-top: 0px
       }
-.Old-Fixed-Param.hunger .old-param__icon{
-
 .Old-Fixed-Param.breath .old-param__icon{
-        margin-right: 14px;
-        margin-top: -7.4px
+    margin-right: 14px;
+    margin-top: -7.4px
 		}
 .Old-Fixed-Param.cash .old-param__icon{
-		margin-right: 1.2vh;
+    margin-right: 1.2vh;
 		}
 .Old-Fixed-Wanted {
     position: relative;
@@ -564,9 +561,10 @@ body #app .hud-radmir-info {
     margin-top: -1vh;
 }
 .Old-Fixed-Wanted_back {
-    position: absolute;
-    right: 0;
-    top: 25px
+    position: relative;
+    right: 1.5;
+    top: 9vh;
+    z-index: -1
 }
 .Wanted_row {
     display: flex;
@@ -1217,11 +1215,6 @@ body #app .hud-radmir-radar__map {
 #app .hud-radmir-radar {
     left: 7.8vh;
     bottom: 4.03vh
-}
-
-/* ------------ НЕ НУЖНО ТРОГАТЬ ------------ */
-.old-hud__wanted--always-show .old-wanted__inactive {
-    opacity: .3;
 }
 
 #app .hud-radmir-speedometer-tachometer {
