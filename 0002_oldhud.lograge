@@ -109,38 +109,30 @@ style.textContent = `
     container.id = 'notifications-container';
     document.body.appendChild(container);
 
-    function createNotification(title, text, icon = 'i', duration = 5000) {
-        const notif = document.createElement('div');
-        notif.className = 'notification-item';
+   function createNotification(title, text, icon = 'i', duration = 3000) {
+    container.style.display = 'flex';
 
-        notif.innerHTML = `
-            <div class="notification-icon">${icon}</div>
-            <div class="notification-content">
-                <div class="notification-title">${title}</div>
-                <div class="notification-text">${text}</div>
-            </div>
-        `;
+    const notif = document.createElement('div');
+    notif.className = 'notification-item';
 
-        container.appendChild(notif);
+    notif.innerHTML = `
+        <div class="notification-icon">${icon}</div>
+        <div class="notification-content">
+            <div class="notification-title">${title}</div>
+            <div class="notification-text">${text}</div>
+        </div>
+    `;
 
-        shadow.classList.add('show');
+    container.appendChild(notif);
 
-        requestAnimationFrame(() => {
-            notif.classList.add('show');
-        });
+    setTimeout(() => {
+        notif.remove();
 
-        setTimeout(() => {
-            notif.classList.add('hide');
-
-            setTimeout(() => {
-                notif.remove();
-
-                if (container.children.length === 0) {
-                    shadow.classList.remove('show');
-                }
-            }, 300);
-        }, duration);
-    }
+        if (container.children.length === 0) {
+            container.style.display = 'none';
+        }
+    }, duration);
+}
 
     createNotification('Смена Радаров /radar', 'Загружена');
         createNotification('Смена Размера Лого /logo', 'Загружена');
