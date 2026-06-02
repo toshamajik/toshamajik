@@ -561,8 +561,8 @@ body #app .hud-radmir-info {
     margin-top: -1vh;
 }
 .Old-Fixed-Wanted_back {
-    right: -1.5;
-    top: 9vh;
+    right: 1.5vh;
+    bottom: 9vh;
     z-index: -1
 }
 .Wanted_row {
