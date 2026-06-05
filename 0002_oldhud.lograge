@@ -1445,7 +1445,7 @@ body .authorization { background: 0 0; }
 
     img.style.position = 'fixed';
     img.style.right = '7.7vh';
-    img.style.top = '25.7vh';
+    img.style.top = '26.5vh';
     img.style.zIndex = '-1111'; 
     img.style.display = 'block';
 
