@@ -451,7 +451,7 @@ body #app .hud-radmir-info {
     margin-top: 1px;
 }
 .Old-Fixed-Params__all {
-    margin-top: 0.6vh;
+    margin-top: 0.3vh;
 }
 .Old-Fixed-Param {
     display: flex;
@@ -1445,7 +1445,7 @@ body .authorization { background: 0 0; }
 
     img.style.position = 'fixed';
     img.style.right = '7.7vh';
-    img.style.top = '25.7h';
+    img.style.top = '25.7vh';
     img.style.zIndex = '-1111'; 
     img.style.display = 'block';
 
@@ -1494,7 +1494,7 @@ body .authorization { background: 0 0; }
                 color: #C3E6FF;
                 text-shadow: 0 0 2vh #000000;
                 font-size: 2vh;
-                z-index: 999999;
+                z-index: -999999;
                 pointer-events: none;
             }
         `;
