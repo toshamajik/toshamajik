@@ -1445,20 +1445,24 @@ body .authorization { background: 0 0; }
 
     img.style.position = 'fixed';
     img.style.right = '7.7vh';
-    img.style.top = '26.5vh';
+    img.style.top = '27vh';
     img.style.zIndex = '-1111'; 
     img.style.display = 'block';
 
         document.body.appendChild(img);
     }
 
-    window.addEventListener('load', () => {
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                createImage();
-            });
-        });
-    });
+    function waitForFreeze() {
+        const freeze = document.querySelector('.Old-Fixed-Freeze');
+
+        if (freeze) {
+            createImage();
+        } else {
+            requestAnimationFrame(waitForFreeze);
+        }
+    }
+
+    waitForFreeze();
 })();
 (function () {
     function injectFreezeStyles() {
@@ -1491,10 +1495,10 @@ body .authorization { background: 0 0; }
                 top: 93vh;
                 left: 8.8vh;
                 font-family: "GothamPro Black", sans-serif;
-                font-weight: 900;
+                font-weight: 0;
                 color: #C3E6FF;
                 text-shadow: 0 0 2vh #000000;
-                font-size: 2vh;
+                font-size: 0vh;
                 z-index: -999999;
                 pointer-events: none;
             }
