@@ -1452,13 +1452,14 @@ body .authorization { background: 0 0; }
         document.body.appendChild(img);
     }
 
-    if (document.readyState === 'loading') {
-        window.addEventListener('load', createImage);
-    } else {
-        createImage();
-    }
+    window.addEventListener('load', () => {
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                createImage();
+            });
+        });
+    });
 })();
-
 (function () {
     function injectFreezeStyles() {
         const style = document.createElement('style');
