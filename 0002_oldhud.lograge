@@ -79,25 +79,24 @@ style.textContent = `
     font-style: normal;
     font-weight: 400;
 }
-                .notification-item.hide {
-                opacity: 0;
-                transform: translateX(60px);
-            }
+.notification-item.hide {
+    opacity: 0;
+    transform: translateX(60px);
+}
 
-            .notification-icon {
-                width: 26px;
-                height: 26px;
-                border-radius: 50%;
-                border: 2px solid rgba(255,255,255,0.9);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                font-size: 14px;
-                flex-shrink: 0;
-
-                margin-right: 16px;
-            }
+.notification-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-right: 16px;
+}
 
 @keyframes fade-in {
     0% {
@@ -412,7 +411,7 @@ body #app .hud-radmir-info {
 }
 .Old-Fixed-Weapon_ammo {
     position: absolute;
-    bottom: 6.2vh;
+    bottom: 5.6vh;
     right: 5.4vh;
     display: flex;
     align-items: flex-end;
@@ -1473,7 +1472,7 @@ body .authorization { background: 0 0; }
             .Old-Fixed-Freeze {
                 position: fixed;
                 top: 96vh;
-                left: 8.8vh;
+                left: 7.8vh;
                 display: flex;
                 width: 22vh;
                 height: .95vh;
@@ -1494,7 +1493,7 @@ body .authorization { background: 0 0; }
             .Old-Fixed-Freeze_text {
                 position: fixed;
                 top: 93vh;
-                left: 8.8vh;
+                left: 7.8vh;
                 font-family: "GothamPro Black", sans-serif;
                 font-weight: 0;
                 color: #C3E6FF;
@@ -1808,7 +1807,7 @@ function getRadarCSS(type) {
 
     if (type === "oval") return `
         #app .hud-radmir-radar__map {
-            left: 7.78vh !important;
+            left: 8.78vh !important;
             bottom: 4.68vh !important;
             width: 24vh !important;
             height: 18.6vh !important;
