@@ -537,9 +537,9 @@ body #app .hud-radmir-info {
     margin-top: -1vh;
 }
 .Old-Fixed-Wanted_back {
-    position: fixed;
-    right: -1.2vh;
-    top: -.66vh;
+    position: absolute;
+    right: 1.2vh;
+    top: 25px;
     z-index: -1;
 }
 .Wanted_row {
@@ -1289,13 +1289,13 @@ body .authorization { background: 0 0; }
               </div>
             </div>
             <div class="Old-Fixed-Weapon">
-              <img src="${oldRadmirConfig.icons.wanted_back}" class="Old-Fixed-Wanted_back">
+              <img src="${oldRadmirConfig.icons.wanted_back}" class="Old-Fixed-weapon_back">
               <img src="${oldRadmirConfig.weapon[0]}" class="Old-Fixed-Weapon_icon">
               <div class="Old-Fixed-Weapon_ammo"><span class="Ammo-in-clip">0</span><span class="Ammo-full">/0</span></div>
             </div>
           </div>
           <div class="Old-Fixed-Wanted">
-            <img src="${oldRadmirConfig.icons.weapon_back}" class="Old-Fixed-weapon_back">
+            <img src="${oldRadmirConfig.icons.weapon_back}" class="Old-Fixed-wanted_back">
             <div class="Wanted_row">
               <img src="${oldRadmirConfig.icons.inactive_wanted}">
               <img src="${oldRadmirConfig.icons.inactive_wanted}">
