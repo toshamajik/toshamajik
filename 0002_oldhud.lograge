@@ -537,7 +537,7 @@ body #app .hud-radmir-info {
     margin-top: -1vh;
 }
 .Old-Fixed-Wanted_back {
-    position: absolute;
+    position: fixed;
     right: 1.2vh;
     top: 25px;
     z-index: -1;
@@ -1429,7 +1429,7 @@ body .authorization { background: 0 0; }
             .Old-Fixed-Freeze {
                 position: fixed;
                 top: 96vh;
-                left: 7.8vh;
+                left: 5vh;
                 display: flex;
                 width: 22vh;
                 height: .95vh;
@@ -1450,7 +1450,7 @@ body .authorization { background: 0 0; }
             .Old-Fixed-Freeze_text {
                 position: fixed;
                 top: 93vh;
-                left: 7.8vh;
+                left: 5vh;
                 font-family: "GothamPro Black", sans-serif;
                 font-weight: 0;
                 color: #00000000;
