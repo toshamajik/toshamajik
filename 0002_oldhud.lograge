@@ -1443,8 +1443,8 @@ body .authorization { background: 0 0; }
 
     img.src = base64; 
     img.style.position = 'absolute';
-    img.style.right = '-1.4vh';
-    img.style.top = '-1.6vh';
+    img.style.right = '0';
+    img.style.top = '25px';
     img.style.zIndex = '-1';
 
     document.body.appendChild(img);
