@@ -451,7 +451,7 @@ body #app .hud-radmir-info {
     margin-top: 1px;
 }
 .Old-Fixed-Params__all {
-    margin-top: 0.68vh;
+    margin-top: 0.6vh;
 }
 .Old-Fixed-Param {
     display: flex;
@@ -1445,7 +1445,7 @@ body .authorization { background: 0 0; }
 
     img.style.position = 'fixed';
     img.style.right = '7.7vh';
-    img.style.top = '28.8vh';
+    img.style.top = '25.7h';
     img.style.zIndex = '-1111'; 
     img.style.display = 'block';
 
