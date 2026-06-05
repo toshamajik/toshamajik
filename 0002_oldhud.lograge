@@ -66,7 +66,7 @@ style.textContent = `
 .notification-title {
     color: #fff;
     font-family: Open Sans, GothamPro, sans-serif;
-    font-size: 1.60085vh;
+    font-size: 1.50085vh;
     font-style: normal;
     font-weight: 600;
     line-height: 2.13447vh;
@@ -75,7 +75,7 @@ style.textContent = `
 .notification-text {
     color: #ffffffb3;
     font-family: Open Sans, GothamPro, sans-serif;
-    font-size: 1.3vh;
+    font-size: 1.2vh;
     font-style: normal;
     font-weight: 400;
 }
@@ -1807,10 +1807,10 @@ function getRadarCSS(type) {
 
     if (type === "oval") return `
         #app .hud-radmir-radar__map {
-            left: 8.78vh !important;
+            left: 9.78vh !important;
             bottom: 4.68vh !important;
             width: 24vh !important;
-            height: 18.6vh !important;
+            height: 19.3vh !important;
             border-radius: 100%;
             border: ${getBorder()} !important;
         }
@@ -2283,6 +2283,20 @@ setTimeout(() => {
     }
 }, 3000);
 
+(function () {
+    function upgradeRadarIcons() {
+        document.querySelectorAll('.radar-icon, .blip, .clist').forEach(icon => {
+            icon.style.width = '3.2vh';
+            icon.style.height = '3.2vh';
+            icon.style.transform = 'translate(-50%, -50%) scale(1.8)';
+        });
+
+        const radar = document.querySelector('.radar');
+        if (radar) radar.style.overflow = 'visible';
+    }
+
+    setInterval(upgradeRadarIcons, 100);
+})();
 
 function showGameText(text = "LOGRAGE MODS HUD", duration = 8000) {
     try {
