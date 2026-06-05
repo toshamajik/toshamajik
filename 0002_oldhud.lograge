@@ -402,8 +402,9 @@ body #app .hud-radmir-info {
 }
 .Old-Fixed-Weapon_back {
     position: absolute;
-    right: 0;
-    top: 25px
+    right: -1.4vh;
+    top: -1.6vh;
+    z-index: -1;
 }
 .Old-Fixed-Weapon_icon {
     width: 36.2vh;
@@ -450,7 +451,7 @@ body #app .hud-radmir-info {
     margin-top: 1px;
 }
 .Old-Fixed-Params__all {
-    margin-top: 0.9vh;
+    margin-top: 0.82vh;
 }
 .Old-Fixed-Param {
     display: flex;
