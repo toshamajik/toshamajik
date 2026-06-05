@@ -1496,8 +1496,8 @@ body .authorization { background: 0 0; }
                 left: 7.8vh;
                 font-family: "GothamPro Black", sans-serif;
                 font-weight: 0;
-                color: #C3E6FF;
-                text-shadow: 0 0 2vh #000000;
+                color: #00000000;
+                text-shadow: 0 0 2vh #00000000;
                 font-size: 0vh;
                 z-index: -999999;
                 pointer-events: none;
@@ -1512,7 +1512,7 @@ body .authorization { background: 0 0; }
 
         const text = document.createElement('div');
         text.className = 'Old-Fixed-Freeze_text';
-        text.textContent = 'FREEZE';
+        text.textContent = '';
 
         const freeze = document.createElement('div');
         freeze.className = 'Old-Fixed-Freeze';
