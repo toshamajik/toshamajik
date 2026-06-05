@@ -530,32 +530,16 @@ body #app .hud-radmir-info {
     background-color: #fff;
     box-shadow: #ffffff80 0 0 5px 0;
 }
-.Old-Fixed-Param.health .old-param__icon{
-        margin-right: 14px;
-        margin-top: -1.4px
-}
-.Old-Fixed-Param.armour .old-param__icon{
-        margin-right: 14px;
-        margin-top: 0px
-}
-.Old-Fixed-Param.hunger .old-param__icon{
 
-.Old-Fixed-Param.breath .old-param__icon{
-        margin-right: 14px;
-        margin-top: -7.4px
-}
-.Old-Fixed-Param.cash .old-param__icon{
-		margin-right: 1.2vh;
-}
 .Old-Fixed-Wanted {
     position: relative;
     margin-right: 7vh;
     margin-top: -1vh;
 }
 .Old-Fixed-Wanted_back {
-    position: absolute;
-    right: -1.5vh;
-    top: 9vh;
+    position: fixed;
+    right: 8.3vh;
+    top: 28vh;
     z-index: -1;
 }
 .Wanted_row {
@@ -1448,7 +1432,7 @@ body .authorization { background: 0 0; }
     img.style.right = '8.3vh';
     img.style.top = '28vh';
     img.style.zIndex = '-1111'; 
-    img.style.display = 'block';
+    img.style.display = 'none';
 
         document.body.appendChild(img);
     }
