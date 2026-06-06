@@ -593,7 +593,7 @@ body #app .hud-radmir-info {
     display: none !important;
 }
 
-#app .hud-radmir-radar__map { width: 20.5vh !important; height: 10vh !important; overflow: hidden; display: flex; justify-content: center; align-items: center; border-radius: 100%; border: none } body #app .hud-radmir-radar__map { transition: .3s } #app .hud-hassle-map { width: 32vh !important; height: 32vh !important } #app .hud-radmir-radar__radar { width: 26.3vh } #app .hud-radmir-radar { left: 10.8vh !important; bottom: 4.03vh }
+#app .hud-radmir-radar__map { width: 21.5vh !important; height: 8vh !important; overflow: hidden; display: flex; justify-content: center; align-items: center; border-radius: 100%; border: none } body #app .hud-radmir-radar__map { transition: .3s } #app .hud-hassle-map { width: 32vh !important; height: 32vh !important } #app .hud-radmir-radar__radar { width: 20.5vh } #app .hud-radmir-radar { left: 10.8vh !important; bottom: 4.03vh }
 
 /*----- JS lograge -----*/
 background-size: auto 100vh;
