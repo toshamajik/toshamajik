@@ -375,10 +375,10 @@ body #app .hud-radmir-info {
     font-weight: 700;
     position: absolute;
     bottom: -5px;
-    right: -2px;
+    right: -3px;
     border-radius: 50%;
     font-style: italic;
-    font-weight: 900
+    font-weight: 800
 }
 .Old-Fixed-Main, .Old-Fixed-Cash, .Wanted_row {
     align-items: center;
@@ -572,260 +572,207 @@ body #app .hud-radmir-info {
     overflow: hidden;
 }
 .Old-Fixed-ZZ{
-       position:absolute;
-       left:21.3vh;
-       bottom:21.3vh
+    position:absolute;
+    left:21.3vh;
+    bottom:21.3vh
 }
 .Old-Fixed-ZZ_icon{
-       width:4.5vh;
-       height:4.5vh
+    width:4.5vh;
+    height:4.5vh
 }
 #app .hud-radmir-radar__radar-border {
     display: none!important;
 }
-
 #app .hud-radmir-radar__radar-border_new-year {
     display: none!important;
 }
-
 #app .hud-radmir-radar__radar-border_helloween {
     display: none!important;
 }
-
 #app .hud-radmir-radar__radar-bats {
     display: none !important;
 }
+
+#app .hud-radmir-radar__map { width: 25vh !important; height: 19.6vh !important; overflow: hidden; display: flex; justify-content: center; align-items: center; border-radius: 100%; border: none } body #app .hud-radmir-radar__map { transition: .3s } #app .hud-hassle-map { width: 32vh !important; height: 32vh !important } #app .hud-radmir-radar__radar { width: 26.3vh } #app .hud-radmir-radar { left: 9.5vh; bottom: 4.03vh }
+
 /*----- JS lograge -----*/
 background-size: auto 100vh;
 }
-
-
-/* ------- Имущка ------- */
 body .info-card {
     background: rgba(0, 0, 0, 0.80);
     border-radius: 31px !important
 }
-
 body .info-card__data {
     background: rgba(0, 0, 0, 0.80);
     border-radius: 31px
 }
-
 body .info-card .text {
     color: #cfcfcf
 }
-
-/* ------- Окна ------- */
 #app .modal-container-wrapper {
     background: rgba(0, 0, 0, 0.8) !important;
     border: 0.19vh solid #ffffff0d;
     border-radius: 2.5vh !important;
 }
-
 #app .modal_violet .modal-container {
     border-top: none !important;
 }
-
 #app .modal-light__light {
     background: none !important;
 }
-
 #app .modal-light__light_second {
     background: none !important;
 }
-
 #app .modal-light__light {
     background: none !important;
 }
-
 #app .modal-light__light_second {
     background: none !important;
 }
-
 #app .modal-overlay {
     background: none !important;
 }
-
 @media (platform:mobile) {
     #app .modal_blue .modal-container-wrapper {
         box-shadow: none !important;
     }
-
     #app .modal_blue .modal-container {
         border-width: 0.3704vh
     }
 }
-
 #app .modal_orange .modal-container {
     border-top: none !important;
 }
-
 #app .modal_orange .modal-container-wrapper {
     box-shadow: none !important;
 }
-
 @media (platform:mobile) {
     #app .modal_orange .modal-container-wrapper {
         box-shadow: none !important;
     }
-
     #app .modal_orange .modal-container {
         border-width: 0.3704vh
     }
 }
-
 #app .modal_violet .modal-container-wrapper {
     box-shadow: none !important;
 }
-
 @media (platform:mobile) {
     #app .modal_violet .modal-container-wrapper {
         box-shadow: none !important;
     }
-
     #app .modal_violet .modal-container {
         border-width: 0.3704vh
     }
 }
-
 #app .modal_green .modal-container {
     border-top: none !important;
 }
-
 #app .modal_green .modal-container-wrapper {
     box-shadow: none !important;
 }
-
 @media (platform:mobile) {
     #app .modal_green .modal-container-wrapper {
         box-shadow: none !important;
     }
-
     #app .modal_green .modal-container {
         border-width: 0.3704vh
     }
 }
-
 #app .modal_red .modal-container {
     border-top: none !important;
 }
-
 #app .modal_red .modal-container-wrapper {
     box-shadow: none !important;
 }
-
 @media (platform:mobile) {
     #app .modal_red .modal-container-wrapper {
         box-shadow: none !important;
     }
-
     #app .modal_red .modal-container {
         border-width: 0.3704vh
     }
 }
-
 #app .modal_dark-orange .modal-container {
     border-top: none !important;
 }
-
 #app .modal_dark-orange .modal-container-wrapper {
     box-shadow: none !important;
 }
-
 @media (platform:mobile) {
     #app .modal_dark-orange .modal-container-wrapper {
         box-shadow: none !important;
     }
-
     #app .modal_dark-orange .modal-container {
         border-width: 0.3704vh
     }
 }
-
 #app .modal_overlay-violet-blue .modal-overlay {
     background: none !important;
 }
-
 body .window-bg {
     background-image: none;
 }
-
 body .window__before {
     background-image: none;
 }
-
 body .window__title {
     text-align: center;
     color: rgba(255, 255, 255, 0.35);
 }
-
 body .window-table__item {
     color: #ffffff;
     border-radius: 2vh;
     border: .09vh solid #ffffff00;
     transition: .25s
 }
-
 body .window-table__item:before {
     border-radius: 3vh;
     background: rgba(0, 0, 0, 0.8);
 }
-
 body .window-table__item:after {
     background: rgba(0, 0, 0, 0.8);
     border-radius: 3vh;
 }
-
 body .window-table__item.selected {
     background: #ffffff;
     color: rgba(0, 0, 0, 0.8);
     border: .09vh solid #f4f1e100
 }
-
 body .window-button {
     border-radius: 2vh;
     color: #ffffff;
     background: rgba(0, 0, 0, 0.8);
 }
-
 body .window-table__item:hover {
     background: rgba(255, 255, 255, 0.35);
     border-color: none
 }
-
 body .window-table__item.selected:hover {
     background: #ffffff;
     color: rgba(0, 0, 0, 0.8);
     border: 0.09vh solid #f4f1e100;
 }
-
 #app .window-button:hover {
     color: rgba(0, 0, 0, 0.8);
     background: rgba(255, 255, 255, 0.35)
 }
-
 #app .window-button:first-child:hover {
     background: rgba(255, 255, 255, 0.35) !important;
 }
-
 #app .window-button:first-child {
     background: rgba(255, 255, 255, 0.35) !important;
 }
-
-.graffiti-pattern__image[data-v-38ff9a6b] {
+#app .graffiti-pattern__image[data-v-38ff9a6b] {
     background: none !important;
 }
-
-/* ------- Чат ------- */
 #app .radmir-chat-input__input {
     background: rgba(0, 0, 0, 0.8) !important;
     border-radius: 11px !important
 }
-
 #app .radmir-chat-input__input input::selection {
     background-color: #00ddff40
 }
-
 #app .radmir-chat__before {
     position: fixed;
     width: 100vw;
@@ -838,36 +785,28 @@ body .window-table__item.selected:hover {
     transition: all .2s ease;
     pointer-events: none
 }
-
 #app .radmir-chat-input__input input {
     margin-left: .9vh !important
 }
-
 #app .radmir-chat-input__input-lang {
     margin-right: 1vh !important
 }
-
 #app .controls-button {
     border-radius: .5vh
 }
-
-/* ------- Трейд ------- */
 #app .trade-items__container {
     border-radius: 10px;
     height: 613px;
     width: 1283px;
     background: rgba(0, 0, 0, 0.8) !important
 }
-
 #app .trade-items {
     background: none
 }
-
 #app .trade-items-main {
     right: -1.2vw;
     top: -2vh
 }
-
 /* ------- Инвентарь ------- */
 #app .inventory {
     background: none
@@ -1289,13 +1228,13 @@ body .authorization { background: 0 0; }
               </div>
             </div>
             <div class="Old-Fixed-Weapon">
-              <img src="${oldRadmirConfig.icons.wanted_back}" class="Old-Fixed-weapon_back">
+              <img src="${oldRadmirConfig.icons.wanted_back}" class="Old-Fixed-wanted_back">
               <img src="${oldRadmirConfig.weapon[0]}" class="Old-Fixed-Weapon_icon">
               <div class="Old-Fixed-Weapon_ammo"><span class="Ammo-in-clip">0</span><span class="Ammo-full">/0</span></div>
             </div>
           </div>
           <div class="Old-Fixed-Wanted">
-            <img src="${oldRadmirConfig.icons.weapon_back}" class="Old-Fixed-wanted_back">
+            <img src="${oldRadmirConfig.icons.weapon_back}" class="Old-Fixed-weapon_back">
             <div class="Wanted_row">
               <img src="${oldRadmirConfig.icons.inactive_wanted}">
               <img src="${oldRadmirConfig.icons.inactive_wanted}">
@@ -1429,7 +1368,7 @@ body .authorization { background: 0 0; }
             .Old-Fixed-Freeze {
                 position: fixed;
                 top: 96vh;
-                left: 5vh;
+                left: 5.8vh;
                 display: flex;
                 width: 22vh;
                 height: .95vh;
@@ -1450,7 +1389,7 @@ body .authorization { background: 0 0; }
             .Old-Fixed-Freeze_text {
                 position: fixed;
                 top: 93vh;
-                left: 5vh;
+                left: 5.8vh;
                 font-family: "GothamPro Black", sans-serif;
                 font-weight: 0;
                 color: #00000000;
@@ -1579,53 +1518,6 @@ body .authorization { background: 0 0; }
 
 AddHud();
 
-(function () {
-
-    if (window.createNotification) return;
-
-    const notif = document.createElement('div');
-
-    notif.style.cssText = `
-        position: fixed;
-        bottom: 40px;
-        right: 55px;
-        background: #ffffff4d;
-        color: white;
-        font-style: normal;
-        font-family: "italic", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-        font-weight: 700;
-        padding: 8px 12px;
-        border-radius: 6px;
-        font-size: 12px;
-        z-index: 9999;
-        opacity: 0;
-        transform: translateX(20px);
-        transition: opacity 0.12s ease, transform 0.12s ease;
-        pointer-events: none;
-    `;
-
-    document.body.appendChild(notif);
-
-    let timeout;
-
-    function createNotification(title, text) {
-
-        notif.innerHTML = `<b>${title}</b><br>${text}`;
-
-        notif.style.opacity = "1";
-        notif.style.transform = "translateX(0)";
-
-        clearTimeout(timeout);
-
-        timeout = setTimeout(() => {
-            notif.style.opacity = "0";
-            notif.style.transform = "translateX(20px)";
-        }, 2000);
-    }
-
-    window.createNotification = createNotification;
-
-})();
 
 let logoStyle = null;
 let logoWidth = 20; 
@@ -1717,388 +1609,6 @@ function openLogoMenu() {
 const observer = new MutationObserver(() => {
     applyLogoSize();
 });
-
-function startObserver() {
-    const target = document.querySelector("#app");
-    if (!target) return;
-
-    observer.observe(target, {
-        childList: true,
-        subtree: true
-    });
-}
-
-setTimeout(startObserver, 2000);
-
-applyLogoSize();
-
-let currentRadarStyle = null;
-let currentType = "oval";
-let radarColor = "#F000";
-
-function getBorder() {
-    return radarColor
-        ? `0.60vh solid ${radarColor}`
-        : `0vh solid transparent`;
-}
-
-function getRadarCSS(type) {
-
-    if (type === "square") return `
-        #app .hud-radmir-radar__map {
-            width: 21.9vh !important;
-            height: 20.9vh !important;
-            border-radius: 2vh;
-            border: ${getBorder()} !important;
-        }
-    `;
-
-    if (type === "rect") return `
-        #app .hud-radmir-radar__map {
-            width: 26.3vh !important;
-            height: 16.9vh !important;
-            border-radius: 2vh;
-            border: ${getBorder()} !important;
-        }
-    `;
-
-    if (type === "oval") return `
-        #app .hud-radmir-radar__map {
-            left: 10.78vh !important;
-            bottom: 4.68vh !important;
-            width: 25vh !important;
-            overflow = 'visible'!important;
-            height: 19.3vh !important;
-            border-radius: 100%;
-            border: ${getBorder()} !important;
-        }
-    `;
-
-    if (type === "round") return `
-        #app .hud-radmir-radar__map {
-            width: 22vh !important;
-            height: 22vh !important;
-            border-radius: 100%;
-            border: ${getBorder()} !important;
-        }
-    `;
-}
-
-function applyRadar(type = currentType) {
-
-    currentType = type;
-
-    if (currentRadarStyle) {
-        currentRadarStyle.remove();
-    }
-
-    const style = document.createElement("style");
-    style.innerHTML = getRadarCSS(type);
-
-    document.head.appendChild(style);
-    currentRadarStyle = style;
-}
-
-function setRadar(type, name) {
-    applyRadar(type);
-
-    createNotification(
-        "Смена радара",
-        `Выбран: ${name}`
-    );
-}
-
-function openRadarMenu() {
-
-    const list = "Квадратный<n>Круглый<n>Прямоугольный<n>Овальный<n>Цвет";
-
-    window.addDialogInQueue(
-        `[0,2,"Смена радара LOGRAGE","Выберите тип радара:","Выбрать","Закрыть",0,0]`,
-        list,
-        0
-    );
-
-    const orig = window.sendClientEvent;
-
-    window.sendClientEvent = function (...args) {
-
-        if (args.includes("OnDialogResponse")) {
-
-            const raw = (args[5] || "").toLowerCase();
-
-            if (raw.includes("квад")) setRadar("square", "Квадратный");
-            if (raw.includes("круг")) setRadar("round", "Круглый");
-            if (raw.includes("прям")) setRadar("rect", "Прямоугольный");
-            if (raw.includes("овал")) setRadar("oval", "Овальный");
-
-            if (raw.includes("цвет")) {
-                setTimeout(openColorMenu, 100);
-            }
-
-            window.sendClientEvent = orig;
-        }
-
-        return orig.apply(this, args);
-    };
-}
-
-function openColorMenu() {
-
-    window.addDialogInQueue(
-        `[0,1,"Цвет Обводки радара","Введите (#FF0000 или убрать #F000)","Ок","Назад",0,0]`,
-        "",
-        0
-    );
-
-    const orig = window.sendClientEvent;
-
-    window.sendClientEvent = function (...args) {
-
-        if (args.includes("OnDialogResponse")) {
-
-            let input = (args[5] || "").trim().toLowerCase();
-            input = input.replace("#", "");
-
-            if (/^[0-9a-f]{3}$/.test(input)) {
-                radarColor = "#" + input.split("").map(c => c + c).join("");
-            }
-            else if (/^[0-9a-f]{6}$/.test(input)) {
-                radarColor = "#" + input;
-            }
-            else {
-                radarColor = null;
-            }
-
-            applyRadar();
-
-            createNotification(
-                "Вы выбрали данный",
-                radarColor ? `Цвет: ${radarColor}` : "Цвет отключен"
-            );
-
-            window.sendClientEvent = orig;
-        }
-
-        return orig.apply(this, args);
-    };
-}
-
-(function () {
-
-    const wait = setInterval(() => {
-
-        if (!window.sendChatInput) return;
-
-        clearInterval(wait);
-
-        const orig = window.sendChatInput;
-
-        window.sendChatInput = function (...a) {
-
-            const msg = a.join("").trim();
-
-            if (msg === "/radar") {
-                openRadarMenu();
-                return;
-            }
-
-            return orig.apply(this, a);
-        };
-
-    }, 500);
-
-})();
-
-applyRadar();
-
-let interfaceStyle = null;
-
-function hexToRgb(hex) {
-    hex = hex.replace(/^#/, "");
-
-    if (hex.length === 3) {
-        hex = hex.split("").map(c => c + c).join("");
-    }
-
-    if (hex.length !== 6) return null;
-
-    return {
-        r: parseInt(hex.substring(0, 2), 16),
-        g: parseInt(hex.substring(2, 4), 16),
-        b: parseInt(hex.substring(4, 6), 16),
-    };
-}
-
-function getLuminance(r, g, b) {
-    const [r0, g0, b0] = [r, g, b].map(c => {
-        c = c / 255;
-        return c <= 0.03928
-            ? c / 12.92
-            : Math.pow((c + 0.055) / 1.055, 2.4);
-    });
-
-    return 0.2126 * r0 + 0.7152 * g0 + 0.0722 * b0;
-}
-
-function applyInterfaceColor(inputColor) {
-
-    let color = inputColor.trim();
-    if (!color) return;
-
-    if (color[0] !== "#") color = "#" + color;
-
-    if (!/^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(color)) {
-        createNotification("Ошибка", "Неверный # цвет");
-        return;
-    }
-
-    if (color.length === 4) {
-        color = "#" + color[1]+color[1]+color[2]+color[2]+color[3]+color[3];
-    }
-
-    const rgb = hexToRgb(color);
-    if (!rgb) return;
-
-    const luminance = getLuminance(rgb.r, rgb.g, rgb.b);
-
-    const textColor = luminance > 0.5 ? "#000000" : "#FFFFFF";
-    const borderColor = luminance > 0.5 ? "#00000033" : "#FFFFFF33";
-    const hoverColor = luminance > 0.5 ? "#0000001a" : "#FFFFFF1a";
-    const activeColor = luminance > 0.5 ? "#0000004d" : "#FFFFFF4d";
-
-const alpha = "80";
-
-const css = `
-    #app .modal-container,
-    #app .modal-container-wrapper {
-        background: ${color} !important;
-    }
-
-    #app .player-interaction__inner {
-         background: ${color} !important;
-         border: .09vh solid ${borderColor} !important;
-    }
-
-    #app .player-interaction-layer {
-         background: ${color}${alpha} !important;
-
-    }
-
-    #app .player-interaction__container {
-         background: ${color}${alpha} !important;
-    }
-
-    #app .player-interaction-favorite {
-         background: ${color}${alpha} !important;
-    }
-
-    #app .player-interaction-favorite:hover {
-         background: ${color}${alpha} !important;
-    }
-
-    #app .container {
-         background: ${color}${alpha} !important;
-    }
-
-    #app .input-field {
-        background: ${color}${alpha} !important;
-        color: ${textColor} !important;
-        border: 1px solid ${borderColor} !important;
-    }
-
-    #app .fuel__container {
-        background: ${color}${alpha} !important;
-    }
-
-    #app .controls-button {
-        background: ${color}${alpha} !important;
-    }
-
-    #app .radmir-chat-input__input {
-        background: ${color}${alpha} !important;
-        border: 1px solid ${borderColor} !important;
-    }
-
-    #app .inventory-action__modal {
-        background: ${color}${alpha} !important;
-
-    }
-         .inventory-container__info__container {
-        background: ${color}${alpha} !important;
-
-}
-    #app .inventory-extra__container,
-    #app .inventory-main {
-        background: ${color}${alpha} !important;
-
-}
-    #app .trade-items__container {
-        background: ${color}${alpha} !important;
-}
-`;
-
-    if (interfaceStyle) interfaceStyle.remove();
-
-    const style = document.createElement("style");
-    style.innerHTML = css;
-    document.head.appendChild(style);
-
-    interfaceStyle = style;
-
-    createNotification("Интерфейс", `Цвет: ${color}`);
-}
-
-
-function openInterfaceMenu() {
-
-    window.addDialogInQueue(
-        `[0,1,"Цвет интерфейса","Введите Цвет (#FF0000)","Применить","Закрыть",0,0]`,
-        "",
-        0
-    );
-
-    const orig = window.sendClientEvent;
-
-    window.sendClientEvent = function (...args) {
-
-        if (args.includes("OnDialogResponse")) {
-
-            const input = (args[5] || "").trim();
-
-            applyInterfaceColor(input);
-
-            window.sendClientEvent = orig;
-        }
-
-        return orig.apply(this, args);
-    };
-}
-
-(function () {
-
-    const wait = setInterval(() => {
-
-        if (!window.sendChatInput) return;
-
-        clearInterval(wait);
-
-        const orig = window.sendChatInput;
-
-        window.sendChatInput = function (...a) {
-
-            const msg = a.join("").trim();
-
-            if (msg === "/interface") {
-                openInterfaceMenu();
-                return;
-            }
-
-            return orig.apply(this, a);
-        };
-
-    }, 500);
-
-})();
 
 (function () {
     if (window.__greenZoneFixed) return;
