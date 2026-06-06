@@ -593,7 +593,7 @@ body #app .hud-radmir-info {
     display: none !important;
 }
 
-#app .hud-radmir-radar__map { width: 25vh !important; height: 19.6vh !important; overflow: hidden; display: flex; justify-content: center; align-items: center; border-radius: 100%; border: none } body #app .hud-radmir-radar__map { transition: .3s } #app .hud-hassle-map { width: 32vh !important; height: 32vh !important } #app .hud-radmir-radar__radar { width: 26.3vh } #app .hud-radmir-radar { left: 9.5vh; bottom: 4.03vh }
+#app .hud-radmir-radar__map { width: 25.6vh !important; height: 19.6vh !important; overflow: hidden; display: flex; justify-content: center; align-items: center; border-radius: 100%; border: none } body #app .hud-radmir-radar__map { transition: .3s } #app .hud-hassle-map { width: 32vh !important; height: 32vh !important } #app .hud-radmir-radar__radar { width: 26.3vh } #app .hud-radmir-radar { left: 11vh !important; bottom: 4.03vh }
 
 /*----- JS lograge -----*/
 background-size: auto 100vh;
@@ -1368,7 +1368,7 @@ body .authorization { background: 0 0; }
             .Old-Fixed-Freeze {
                 position: fixed;
                 top: 96vh;
-                left: 5.8vh;
+                left: 8.8vh;
                 display: flex;
                 width: 22vh;
                 height: .95vh;
@@ -1389,7 +1389,7 @@ body .authorization { background: 0 0; }
             .Old-Fixed-Freeze_text {
                 position: fixed;
                 top: 93vh;
-                left: 5.8vh;
+                left: 8.8vh;
                 font-family: "GothamPro Black", sans-serif;
                 font-weight: 0;
                 color: #00000000;
