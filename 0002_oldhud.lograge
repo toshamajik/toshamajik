@@ -593,7 +593,7 @@ body #app .hud-radmir-info {
     display: none !important;
 }
 
-#app .hud-radmir-radar__map { width: 26.5vh !important; height: 19.6vh !important; overflow: hidden; display: flex; justify-content: center; align-items: center; border-radius: 100%; border: none } body #app .hud-radmir-radar__map { transition: .3s } #app .hud-hassle-map { width: 32vh !important; height: 32vh !important } #app .hud-radmir-radar__radar { width: 26.3vh } #app .hud-radmir-radar { left: 12.8vh !important; bottom: 4.03vh }
+#app .hud-radmir-radar__map { width: 24.5vh !important; height: 16.6vh !important; overflow: hidden; display: flex; justify-content: center; align-items: center; border-radius: 100%; border: none } body #app .hud-radmir-radar__map { transition: .3s } #app .hud-hassle-map { width: 32vh !important; height: 32vh !important } #app .hud-radmir-radar__radar { width: 26.3vh } #app .hud-radmir-radar { left: 10.8vh !important; bottom: 4.03vh }
 
 /*----- JS lograge -----*/
 background-size: auto 100vh;
@@ -1367,7 +1367,7 @@ body .authorization { background: 0 0; }
         style.textContent = `
             .Old-Fixed-Freeze {
                 position: fixed;
-                top: 96vh;
+                top: 98vh;
                 left: 8.8vh;
                 display: flex;
                 width: 22vh;
@@ -1381,7 +1381,7 @@ body .authorization { background: 0 0; }
 
             .Old-Fixed-Freeze_value {
                 height: 100%;
-                width: 100%;
+                width: 50%;
                 border-radius: .3vh;
                 background: #72cddf;
             }
