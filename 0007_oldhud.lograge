@@ -1469,8 +1469,8 @@ window.Hudloader = window.Hudloader || {
             <path stroke-dasharray="${this.barsValues.speed.dashArray}" stroke-dashoffset="${this.barsValues.speed.dashArray}" d="M77.1398 208.853C58.8077 198.269 44.4618 181.954 36.31 162.418C28.1581 142.883 26.6521 121.21 32.0237 100.735C37.3953 80.2594 49.3467 62.1168 66.0388 49.099C82.7309 36.0812 103.238 28.9096 124.405 28.6879C145.572 28.4662 166.225 35.2068 183.187 47.8722C200.148 60.5376 212.476 78.4259 218.276 98.7841C224.075 119.142 223.023 140.842 215.282 160.544C207.541 180.246 193.54 196.858 175.433 207.824" stroke="url(#paint0_linear_2353_2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
             <defs>
                 <linearGradient id="paint0_linear_2353_2" x1="27.3633" y1="27.1826" x2="223.47" y2="27.1826" gradientUnits="userSpaceOnUse">
-                    <stop offset="0.05" stop-color="#F5BE09" />
-                    <stop offset="1" stop-color="#E9651B" />
+                    <stop offset="0.05" stop-color="#e7e7e7" />
+                    <stop offset="1" stop-color="#e7e7e7" />
                 </linearGradient>
             </defs>
         </svg>
@@ -1488,8 +1488,8 @@ window.Hudloader = window.Hudloader || {
             <path stroke-dasharray="${this.barsValues.damage.dashArray}" stroke-dashoffset="${this.barsValues.damage.dashArray}"  d="M31.7773 139.778C31.7773 125.543 34.5911 111.45 40.0569 98.3067C45.5227 85.1637 53.5326 73.2308 63.6261 63.1943C73.7196 53.1577 85.6976 45.2153 98.8712 39.824C112.045 34.4326 126.154 31.6986 140.388 31.7791" stroke="url(#paint0_linear_2071_131)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
             <defs>
                 <linearGradient id="paint0_linear_2071_131" x1="30.2773" y1="30.2773" x2="249.278" y2="30.2773" gradientUnits="userSpaceOnUse">
-                    <stop offset="0.05" stop-color="#F5BE09" />
-                    <stop offset="1" stop-color="#E9651B" />
+                    <stop offset="0.05" stop-color="#e7e7e7" />
+                    <stop offset="1" stop-color="#e7e7e7" />
                 </linearGradient>
             </defs>
         </svg>         
@@ -1500,8 +1500,8 @@ window.Hudloader = window.Hudloader || {
             <path stroke-dasharray="${this.barsValues.wash.dashArray}" stroke-dashoffset="${this.barsValues.wash.dashArray}"  d="M247.778 139.77C247.779 154.033 244.955 168.154 239.469 181.32C233.982 194.485 225.943 206.434 215.814 216.475C205.685 226.517 193.668 234.452 180.455 239.824C167.243 245.196 153.097 247.898 138.835 247.774" stroke="url(#paint0_linear_2071_136)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
             <defs>
                 <linearGradient id="paint0_linear_2071_136" x1="30.2773" y1="30.2773" x2="249.278" y2="30.2773" gradientUnits="userSpaceOnUse">
-                    <stop offset="0.05" stop-color="#F5BE09" />
-                    <stop offset="1" stop-color="#E9651B" />
+                    <stop offset="0.05" stop-color="#e7e7e7" />
+                    <stop offset="1" stop-color="#e7e7e7" />
                 </linearGradient>
             </defs>
         </svg>         
@@ -1587,7 +1587,7 @@ body {
 .OLDHudloader-speed__bar,
 .OLDHudloader-wash__bar {
     z-index: 2;
-    filter: drop-shadow(0vh 0vh 3.0958799999999997vh #f1a60d);
+    filter: drop-shadow(0vh 0vh 3.0958799999999997vh #e7e7e7);
 }
 .OLDHudloader-speed__bar,
 .OLDHudloader-speed__bar-bg,
@@ -1630,7 +1630,7 @@ body {
 .OLDHudloader-speed__text {
     font-size: 1.66668vh;
     font-weight: 400;
-    color: #ee8a14;
+    color: #5e5e5e;
     line-height: 1.66668vh;
     width: 100%;
 }
@@ -1773,7 +1773,7 @@ body {
 }
 .OLDHudloader-speedometer__tachometer > div {
     flex-direction: row;
-    background-image: radial-gradient(90.03% 75% at -20% 50%, #ff5c00b3 0, #e9651b00 100%);
+    background-image: radial-gradient(90.03% 75% at -20% 50%, #e7e7e7 0, #e9651b00 100%);
     display: flex;
     text-transform: uppercase;
     font-size: 3.44448vh;
@@ -1790,20 +1790,20 @@ body {
     font-size: 2.22228vh !important;
 }
 .OLDHudloader-tachometer-glow > div {
-    color: #65c466;
-    text-shadow: 0 0 2.22228vh #65c466;
+    color: #e7e7e7;
+    text-shadow: 0 0 2.22228vh #e7e7e7;
 }
 .OLDHudloader-speedometer-danger {
-    filter: drop-shadow(0vh 0vh 1.66668vh #ea4d39);
+    filter: drop-shadow(0vh 0vh 1.66668vh #e7e7e7);
 }
 .OLDHudloader-speedometer-danger div {
-    color: #ea4f3e;
+    color: #e7e7e7;
 }
 .OLDHudloader-speedometer-danger .OLDHudloader-speedometer-data__text {
-    color: #ea4f3eb3;
+    color: #e7e7e7b3;
 }
 .OLDHudloader-speedometer-danger path {
-    stroke: #ea4f3e;
+    stroke: #e7e7e7;
 }
         `;
         document.head.appendChild(styleEl);
