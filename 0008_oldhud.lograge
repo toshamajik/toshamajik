@@ -398,7 +398,7 @@ body #app .hud-radmir-info {
     margin-right: .46vh;
 }
 .Ammo-in-clip, .old-param__icon {
-    margin-right: 1vh;
+    margin-right: 1.1vh;
 }
 .Old-Fixed-Weapon_back {
     position: absolute;
@@ -457,7 +457,7 @@ body #app .hud-radmir-info {
     display: flex;
     align-items: center;
     margin-bottom: -2.2px;
-    margin-left: 3px;
+    margin-left: 4px;
     margin-top: .96vh;
 }
 .Old-Param-Progress, .Old-Progress__Values {
