@@ -359,8 +359,8 @@ body #app .hud-radmir-info {
     margin-bottom: 3vh;
 }
 .Old-Fixed-Logo img {
-  width: 18vh;
-  height: 5vh;
+  width: 19vh;
+  height: 5.5vh;
   margin-right: 3vh;
 }
 .Old-Fixed-Bonus{
@@ -386,7 +386,7 @@ body #app .hud-radmir-info {
 }
 .Old-Fixed-Main {
     margin-top: .46vh;
-    margin-right: 3.46vh;
+    margin-right: 3.26vh;
 }
 .Old-Fixed-Weapon {
     width: 16.6vh;
@@ -1543,8 +1543,8 @@ AddHud();
 
 
 let logoStyle = null;
-let logoWidth = 20; 
-let logoHeight = 5.7; 
+let logoWidth = 19; 
+let logoHeight = 5.5; 
 
 function applyLogoSize(w = logoWidth, h = logoHeight) {
 
