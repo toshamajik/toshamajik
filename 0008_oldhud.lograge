@@ -153,7 +153,7 @@ style.textContent = `
 }
 
     createNotification('Смена Радаров /radar', 'Загружена');
-    createNotification('gameplay oss', 'Загружен');
+    createNotification('Radmir OLD', 'Загружен');
 
 })();
 
@@ -398,7 +398,7 @@ body #app .hud-radmir-info {
     margin-right: .46vh;
 }
 .Ammo-in-clip, .old-param__icon {
-    margin-right: 1vh;
+    margin-right: 0.4vh;
 }
 .Old-Fixed-Weapon_back {
     position: absolute;
