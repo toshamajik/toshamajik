@@ -359,8 +359,8 @@ body #app .hud-radmir-info {
     margin-bottom: 3vh;
 }
 .Old-Fixed-Logo img {
-  width: 19vh;
-  height: 5.5vh;
+  width: 18vh;
+  height: 6vh;
   margin-right: 3vh;
 }
 .Old-Fixed-Bonus{
@@ -645,50 +645,84 @@ body .info-card .text {
 
     border-radius:1.85vh !important;
     border:.09vh solid rgba(255,178,0,.15) !important;
+
+    min-width:37.04vh !important;
+    width:37.04vh !important;
+    max-width:37.04vh !important;
+
+    padding:2.22vh 0 !important;
+    box-sizing:border-box !important;
 }
 
-#app .modal-container{
-    border-top:none !important;
+/* контент как у window__content */
+#app .modal-container,
+#app .modal-content{
+    margin-top:1.39vh !important;
+    height:29.63vh !important;
+    max-height:29.63vh !important;
+    overflow:auto !important;
 }
 
+/* заголовок как window__title */
+#app .modal-title,
+#app .modal-header{
+    font-size:1.48vh !important;
+    line-height:1.39vh !important;
+    font-weight:500 !important;
+}
+
+/* подзаголовок как window__subtitle */
+#app .modal-subtitle{
+    font-size:.93vh !important;
+    line-height:.83vh !important;
+}
+
+/* кнопки как window-button */
 #app .modal-container .window-button,
 #app .modal-container button{
-    background:linear-gradient(
-        45deg,
-        #e9651b,
-        #f5be09
-    ) !important;
-
-    color:#fff !important;
+    height:2.31vh !important;
+    line-height:2.31vh !important;
+    font-size:1.11vh !important;
+    padding:0 1.2vh !important;
     border-radius:.93vh !important;
 }
 
-#app .modal-container .window-table__item,
-#app .modal-container .list-item{
-    background:#35121fcc !important;
-    color:#fff !important;
+/* поля ввода как window-input */
+#app .modal-container input{
+    height:3.24vh !important;
+    font-size:1.39vh !important;
+    padding:0 1.39vh !important;
+}
+
+/* элементы списка как window-list__item */
+#app .modal-container .list-item,
+#app .modal-container .window-table__item{
+    min-height:3.7vh !important;
+    height:3.7vh !important;
+    margin-top:.93vh !important;
     border-radius:.46vh !important;
 }
 
-#app .modal-container .window-table__item:hover,
-#app .modal-container .list-item:hover{
-    background:#4c1a2dcc !important;
+/* таблицы */
+#app .modal-container .table-head,
+#app .modal-container .window-table__head{
+    height:2.78vh !important;
 }
 
-#app .modal-container .window-table__item.selected,
-#app .modal-container .list-item.selected{
-    background:#ffb200 !important;
-    color:#351321 !important;
+#app .modal-container .table-cell,
+#app .modal-container .window-table__col{
+    font-size:1.11vh !important;
+    line-height:2.78vh !important;
 }
 
-#app .modal-container input{
-    background:#471a2bcc !important;
-    color:#fff !important;
-    border-radius:.93vh !important;
+/* скролл как у window */
+#app .modal-container::-webkit-scrollbar{
+    width:.46vh;
 }
 
-#app .modal-container input::placeholder{
-    color:#ffffff26 !important;
+#app .modal-container::-webkit-scrollbar-thumb{
+    background:#feb900;
+    border-radius:.46vh;
 }
 #app .radmir-chat-input__input {
     background: rgba(0, 0, 0, 0.8) !important;
