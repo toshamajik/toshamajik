@@ -1532,15 +1532,15 @@ customZone.innerHTML = `
     >
 
     <div class="Old-Fixed-ZZ-Text">
-        <div class="Old-Fixed-ZZ-Title">БЕЗОПАСНАЯ ЗОНА</div>
-        <div class="Old-Fixed-ZZ-Desc">Вы находитесь в безопасной зоне.</div>
+        <div class="Old-Fixed-ZZ-Title">SAFE ZONE</div>
+        <div class="Old-Fixed-ZZ-Desc">You are in a safe zone.</div>
     </div>
 `;
 
 customZone.style.cssText = `
     position:absolute;
-    left:1vw;
-    bottom:1.7vh;
+    left:2.4vh;
+    bottom:5vh;
     display:none;
     align-items:center;
     gap:.6vh;
