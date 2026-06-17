@@ -1538,8 +1538,8 @@ customZone.innerHTML = `
 
 customZone.style.cssText = `
     position:absolute;
-    left:6vw;
-    bottom:25vh;
+    left:7vw;
+    bottom:26vh;
     display:none;
     align-items:center;
     gap:.45vh;
@@ -1551,12 +1551,7 @@ document.body.appendChild(customZone);
 
 const zoneStyle = document.createElement('style');
 zoneStyle.textContent = `
-.Old-Fixed-ZZ {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .5vh;
-}
+
 .gz-wrapper {
     display: flex;
     flex-direction: column;
