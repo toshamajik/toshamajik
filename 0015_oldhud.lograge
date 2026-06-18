@@ -1548,6 +1548,15 @@ customZone.style.cssText = `
 
 document.body.appendChild(customZone);
 
+const forceLayout = () => {
+    customZone.style.setProperty('display', 'flex', 'important');
+    customZone.style.setProperty('flex-direction', 'row', 'important');
+    customZone.style.setProperty('align-items', 'center', 'important');
+};
+
+forceLayout();
+setInterval(forceLayout, 500);
+
 const zoneStyle = document.createElement('style');
 zoneStyle.textContent = `
 
