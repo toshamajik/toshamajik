@@ -1552,13 +1552,11 @@ document.body.appendChild(customZone);
 const zoneStyle = document.createElement('style');
 zoneStyle.textContent += `
 .Old-Fixed-ZZ{
-    display:flex !important;
     flex-direction:row !important;
     align-items:center !important;
 }
 
 .Old-Fixed-ZZ img{
-    display:block !important;
     flex-shrink:0 !important;
 }
 
