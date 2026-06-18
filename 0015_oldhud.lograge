@@ -358,7 +358,7 @@ body #app .hud-radmir-info {
 }
 .Old-Fixed-Logo img {
   width: 18vh;
-  height: 6vh;
+  height: 5vh;
   margin-right: 3vh;
 }
 .Old-Fixed-Bonus{
@@ -594,7 +594,7 @@ body #app .hud-radmir-info {
 
 #app .hud-radmir-radar__map { 
     width: 21.00vw; 
-    height:17.5vh; 
+    height:15.5vh; 
     overflow: hidden; 
     display: flex; 
     justify-content: center; 
@@ -1044,8 +1044,7 @@ body #app .hud-radmir-radar__map {
     border: none;
 }
 
-body .authorization { background: 0 0; }
-#app .authorization { background-image: url(); }
+body .authorization { background: 0 0; } #app .authorization { background-image: url(); }
     `
         document.head.appendChild(hudStyleElement);
 
@@ -1539,9 +1538,10 @@ customZone.style.cssText = `
     position:absolute;
     left:9vw;
     bottom:26vh;
-    display:none;
-    flex-direction:row;
+    display:flex;
+    flex-direction:row !important;
     align-items:center;
+    justify-content:flex-start;
     gap:10px;
     z-index:999999;
 `;
@@ -1559,14 +1559,14 @@ zoneStyle.textContent = `
 .gz-title {
     color: #ffffff;
     text-shadow: 3px 3px 5px #00000080;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 900;
     text-transform: uppercase;
 }
 .gz-subtitle {
     color: #ffffff93;
     text-shadow: .28vh .28vh .46vh #00000080;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     margin-top: 5px;
 }
