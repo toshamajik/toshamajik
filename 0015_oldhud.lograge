@@ -1548,17 +1548,24 @@ customZone.style.cssText = `
 
 document.body.appendChild(customZone);
 
-const forceLayout = () => {
-    customZone.style.setProperty('display', 'none', 'important');
-    customZone.style.setProperty('flex-direction', 'row', 'important');
-    customZone.style.setProperty('align-items', 'center', 'important');
-};
-
-forceLayout();
-setInterval(forceLayout, 500);
 
 const zoneStyle = document.createElement('style');
-zoneStyle.textContent = `
+zoneStyle.textContent += `
+.Old-Fixed-ZZ{
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+}
+
+.Old-Fixed-ZZ img{
+    display:block !important;
+    flex-shrink:0 !important;
+}
+
+.gz-wrapper{
+    display:flex !important;
+    flex-direction:column !important;
+}
 
 .gz-wrapper {
     display: flex;
