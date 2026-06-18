@@ -1551,18 +1551,24 @@ document.body.appendChild(customZone);
 
 const zoneStyle = document.createElement('style');
 zoneStyle.textContent += `
-.Old-Fixed-ZZ{
-    flex-direction:row !important;
-    align-items:center !important;
+.Old-Fixed-ZZ {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
 }
 
-.Old-Fixed-ZZ img{
-    flex-shrink:0 !important;
+.Old-Fixed-ZZ > img {
+    width: 60px !important;
+    height: auto !important;
+    flex: 0 0 auto !important;
+    display: block !important;
 }
 
-.gz-wrapper{
-    display:flex !important;
-    flex-direction:column !important;
+.Old-Fixed-ZZ > .gz-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 0 0 auto !important;
 }
 
 .gz-wrapper {
