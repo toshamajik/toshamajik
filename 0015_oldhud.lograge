@@ -1538,7 +1538,7 @@ customZone.style.cssText = `
     position:absolute;
     left:9vw;
     bottom:26vh;
-    display:flex;
+    display:none;
     flex-direction:row !important;
     align-items:center;
     justify-content:flex-start;
@@ -1549,7 +1549,7 @@ customZone.style.cssText = `
 document.body.appendChild(customZone);
 
 const forceLayout = () => {
-    customZone.style.setProperty('display', 'flex', 'important');
+    customZone.style.setProperty('display', 'none', 'important');
     customZone.style.setProperty('flex-direction', 'row', 'important');
     customZone.style.setProperty('align-items', 'center', 'important');
 };
