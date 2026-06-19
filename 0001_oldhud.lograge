@@ -373,7 +373,7 @@ body #app .hud-radmir-info {
     font-weight: 700;
     position: absolute;
     top: 3vh;
-    right: 6vh;
+    right: 12vh;
     border-radius: 50%;
     font-style: italic;
     font-weight: 800
@@ -590,8 +590,8 @@ body #app .hud-radmir-info {
     display: none!important;
 }
 #app .hud-radmir-radar__map { 
-    width: 23.3vh !importnat;
-    height: 15vh !importnat;
+    width: 26.3vh !importnat;
+    height: 16vh !importnat;
     overflow: hidden; 
     display: flex; 
     justify-content: center; 
@@ -610,7 +610,7 @@ body #app .hud-radmir-radar__map {
     width: 26.65vh 
 } 
 #app .hud-radmir-radar { 
-    left: 12vh !important; 
+    left: 10vh !important; 
     bottom: 5.85vh 
 } 
 .hud-radmir-radar__radar-border {
