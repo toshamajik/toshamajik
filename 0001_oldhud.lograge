@@ -373,7 +373,7 @@ body #app .hud-radmir-info {
     font-weight: 700;
     position: absolute;
     top: 3vh;
-    right: 12vh;
+    right: 16vh;
     border-radius: 50%;
     font-style: italic;
     font-weight: 800
@@ -589,35 +589,7 @@ body #app .hud-radmir-info {
 #app .hud-radmir-radar__radar-border_helloween {
     display: none!important;
 }
-#app .hud-radmir-radar__map { 
-    width: 26.3vh !importnat;
-    height: 16vh !importnat;
-    overflow: hidden; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    border-radius: 50%; 
-    border: none 
-} 
-body #app .hud-radmir-radar__map {
-    transition: .3s 
-} 
-#app .hud-hassle-map { 
-    width: 32vh !important; 
-    height: 32vh !important 
-} 
-#app .hud-radmir-radar__radar {
-    width: 26.65vh 
-} 
-#app .hud-radmir-radar { 
-    left: 10vh !important; 
-    bottom: 5.85vh 
-} 
-.hud-radmir-radar__radar-border {
-    width:118%;
-    height:118%;
-    position:absolute
-}
+
 background-size: auto 100vh;
 }
 body .info-card {
