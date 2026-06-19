@@ -152,7 +152,6 @@ style.textContent = `
     }, duration);
 }
 
-    createNotification('Смена Радаров /radar', 'Загружена');
     createNotification('Catrage White', 'Загружен');
 
 })();
@@ -592,6 +591,36 @@ body #app .hud-radmir-info {
 
 background-size: auto 100vh;
 }
+body .info-card {background: rgba(0,0,0,.7);
+}
+body .info-card__data {
+    background: rgba(0,0,0,.6);
+}
+body .info-card .text {
+    color: #cfcfcf;
+}
+.left,.range .knob {
+    background: #fff!important;
+}
+.right {
+    background: #ffffff80!important;
+}
+#app .vignette {
+    display: none;
+}
+.hud-hassle-map .map-mask {
+    border: 10px solid #000;
+}
+#app .hud-radmir-radar__map {
+    position: absolute;
+    left: 6.58vh;
+    bottom: 4.68vh;
+    width: 26.93vh;
+    height: 25.93vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}    
 body .info-card {
     background: rgba(0, 0, 0, 0.80);
     border-radius: 31px !important
