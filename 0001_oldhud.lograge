@@ -153,7 +153,7 @@ style.textContent = `
 }
 
     createNotification('Смена Радаров /radar', 'Загружена');
-    createNotification('White', 'Загружен');
+    createNotification('Catrage White', 'Загружен');
 
 })();
 
@@ -358,7 +358,7 @@ body #app .hud-radmir-info {
 }
 .Old-Fixed-Logo img {
   width: 18vh;
-  height: 5vh;
+  height: 6vh;
   margin-right: 3vh;
 }
 .Old-Fixed-Bonus{
@@ -373,7 +373,7 @@ body #app .hud-radmir-info {
     font-weight: 700;
     position: absolute;
     top: 3vh;
-    right: 2.5vh;
+    right: 6vh;
     border-radius: 50%;
     font-style: italic;
     font-weight: 800
@@ -507,7 +507,7 @@ body #app .hud-radmir-info {
     margin-left: 14px
 }
 .Old-Fixed-Param.hunger {
-    margin-left: 2px
+    margin-left: 1px
 }
 .Old-Fixed-Param.breath {
     margin-left: 3px
@@ -590,8 +590,8 @@ body #app .hud-radmir-info {
     display: none!important;
 }
 #app .hud-radmir-radar__map { 
-    width: 20.00vw !importnat;
-    height:14vh !importnat;
+    width: 23.3vh !importnat;
+    height: 15vh !importnat;
     overflow: hidden; 
     display: flex; 
     justify-content: center; 
@@ -1234,7 +1234,7 @@ body .authorization { background: 0 0; } #app .authorization { background-image:
 
             .Old-Fixed-Freeze_value {
                 height: 100%;
-                width: 35%;
+                width: 85%;
                 border-radius: .3vh;
                 background: #72cddf;
             }
@@ -1373,8 +1373,8 @@ AddHud();
 
 
 let logoStyle = null;
-let logoWidth = 19; 
-let logoHeight = 5.5; 
+let logoWidth = 18; 
+let logoHeight = 6; 
 
 function applyLogoSize(w = logoWidth, h = logoHeight) {
 
@@ -1517,11 +1517,10 @@ customZone.innerHTML = `
         style="gap: 1vh;"
     >
     <div class="gz-wrapper">
-        <div class="gz-title">БЕЗОПАСНАЯ ЗОНА</div>
-        <div class="gz-subtitle">Вы находитесь в безопасной зоне.</div>
+        <div class="OLD-RADMIR-TEXT">БЕЗОПАСНАЯ ЗОНА</div>
+        <div class="OLD-RADMIR-TEXT-TWO">Вы находитесь в безопасной зоне.</div>
     </div>
 `;
-
 
 customZone.style.cssText = `
     position:absolute;
@@ -1543,29 +1542,20 @@ customZone.style.setProperty('align-items', 'center', 'important');
 
 const zoneStyle = document.createElement('style');
 zoneStyle.textContent += `
-.Old-Fixed-ZZ{
-    flex-direction:row !important;
-    align-items:center !important;
-}
 
-.Old-Fixed-ZZ img{
-    display:fixed !important;
-    flex-shrink:0 !important;
-}
-
-.gz-wrapper {
+.OLD-RADMIR-zone {
     display: flex;
     flex-direction: column;
     gap: 0.15vh;
 }
-.gz-title {
+.OLD-RADMIR-TEXT {
     color: #ffffff;
     text-shadow: 3px 3px 5px #00000080;
     font-size: 13px;
     font-weight: 900;
     text-transform: uppercase;
 }
-.gz-subtitle {
+.OLD-RADMIR-TEXT-TWO {
     color: #ffffff93;
     text-shadow: .28vh .28vh .46vh #00000080;
     font-size: 11px;
