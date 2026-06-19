@@ -639,12 +639,10 @@ body .info-card .text {
 }
 #app .hud-radmir-radar__map {
     position: absolute;
-    bottom: -1vh;
     width: 26.93vh;
     height: 25.93vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
 }    
 body .info-card {
     background: rgba(0, 0, 0, 0.80);
