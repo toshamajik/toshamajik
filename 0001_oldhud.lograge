@@ -626,9 +626,9 @@ body .info-card .text {
     color: #ffffff;
 }
 .left,.range .knob {
-    background: #fff!important;
+    background: #c5db89!important;
 }
-.right {
+.right,.range .knob {
     background: #ffffff80!important;
 }
 #app .vignette {
@@ -638,12 +638,7 @@ body .info-card .text {
     border: 11px solid #000;
 }
 #app .hud-radmir-radar__map {
-    position: absolute;
-    bottom: -1vh;
-    width: 26.93vh;
-    height: 25.93vh;
-    display: flex;
-    justify-content: center;
+border-radius: 100%;
 }    
 body .info-card {
     background: rgba(0, 0, 0, 0.80);
