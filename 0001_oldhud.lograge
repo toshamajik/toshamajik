@@ -481,7 +481,7 @@ body #app .hud-radmir-info {
     display: flex;
     align-items: center;
     margin-bottom: -2.2px;
-    margin-left: 4px;
+    margin-left: 5px;
     margin-top: .96vh;
 }
 .Old-Param-Progress, .Old-Progress__Values {
@@ -1445,7 +1445,7 @@ customZone.innerHTML = `
 
 customZone.style.cssText = `
     position:absolute;
-    left:7vw;
+    left:6vw;
     bottom:27vh;
     display:none;
     flex-direction:row;
