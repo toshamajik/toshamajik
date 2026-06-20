@@ -540,15 +540,15 @@ body #app .hud-radmir-info {
 }  
 .Old-Fixed-Param.health .Old-Progress__Values {
     background-color: #ed2e2e;
-    box-shadow: #ed2e2e80 0 0 .46vh 0;
+    box-shadow: #ed2e2e90 0 0 .46vh 0;
 }
 .Old-Fixed-Param.armour .Old-Progress__Values {
     background-color: #526ee6;
-    box-shadow: #526ee680 0 0 .46vh 0;
+    box-shadow: #526ee690 0 0 .46vh 0;
 }
 .Old-Fixed-Param.hunger .Old-Progress__Values {
     width: 50%;
-    box-shadow: #ff872e80 0 0 5px 0;
+    box-shadow: #ff872e90 0 0 5px 0;
     background-color: #ff872e;
 }
 .Old-Fixed-Param.breath .Old-Progress__Values {
@@ -635,12 +635,11 @@ body .info-card .text {
     display: none;
 }
 .hud-hassle-map .map-mask {
-    border: 10px solid #000;
+    border: 11px solid #000;
 }
 #app .hud-radmir-radar__map {
     position: absolute;
-    bottom: 1vh;
-    left: 4vh;
+    bottom: -1vh;
     width: 26.93vh;
     height: 25.93vh;
     display: flex;
@@ -1576,8 +1575,8 @@ hud.showGreenZoneTab = function () {
     `;
     customZone.style.cssText = `
         position:absolute;
-        left: 5vw;
-        bottom:25vh;
+        left: 1vw;
+        bottom:1.7vh;
         display:none;
         align-items:center;
         gap: 0vh;
