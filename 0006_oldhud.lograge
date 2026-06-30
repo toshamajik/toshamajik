@@ -1106,6 +1106,91 @@ body .authorization { background: 0 0; } #app .authorization { background-image:
             }
         },
     };
+
+    function onInfoChange(type, value) {
+        setTimeout(() => {
+            if (loadingNotification) {
+                loadingNotification.style.opacity = '0';
+                setTimeout(() => {
+                    if (loadingNotification && loadingNotification.parentNode) {
+                        loadingNotification.remove();
+                    }
+                }, 2500);
+                loadingNotification = null;
+            }
+        }, 1000);
+
+        if (updateFunctions[type]) {
+            updateFunctions[type](value);
+        }
+    }
+
+    function updateParam(paramClass, value) {
+        const paramElement = document.querySelector(`.Old-Fixed-Param.${paramClass}`);
+        if (paramElement) {
+            const progressBar = paramElement.querySelector(".Old-Progress__Values");
+            const valueText = paramElement.querySelector(".Old-Param-Values");
+            progressBar.style.width = `${value}%`;
+            valueText.textContent = value;
+        }
+    }
+
+    function initializeHudProxy() {
+        const checkInterval = setInterval(() => {
+            if (typeof window.interface === "function" && window.interface("Hud").info) {
+                clearInterval(checkInterval);
+                const hudInfo = window.interface("Hud").info;
+                const clonedHudInfo = JSON.parse(JSON.stringify(hudInfo));
+
+                window.interface("Hud").info = new Proxy(clonedHudInfo, {
+                    set(target, prop, value) {
+                        if (target[prop] !== value) {
+                            target[prop] = value;
+                            onInfoChange(prop, value);
+                        }
+                        return Reflect.set(target, prop, value);
+                    }
+                });
+
+                window.interface("Hud").setServer = (serverId) => {
+                    onInfoChange("server", serverId);
+                    window.interface("Hud").server = serverId;
+                };
+
+                window.interface("Hud").setBonus = (bonusValue) => {
+                    onInfoChange("bonus", bonusValue);
+                    window.interface("Hud").bonus = bonusValue;
+                };
+                window.interface("Hud").showGreenZoneTab = () => {
+                    onInfoChange("greenZone", true);
+                };
+                window.interface("Hud").hideGreenZoneTab = () => {
+                    onInfoChange("greenZone", false);
+                };
+
+                
+                createHud();
+
+                
+                const props = ['health', 'armour', 'hunger', 'breath', 'money', 'wanted', 'ammoInClip', 'totalAmmo', 'freeze', 'weapon', 'show'];
+                props.forEach(prop => {
+                    if (prop in hudInfo && updateFunctions[prop]) {
+                        updateFunctions[prop](hudInfo[prop]);
+                    }
+                });
+
+                if ('server' in window.interface("Hud")) updateFunctions.server(window.interface("Hud").server);
+                if ('bonus' in window.interface("Hud")) updateFunctions.bonus(window.interface("Hud").bonus);
+            }
+        }, 100);
+    }
+
+    initializeHudProxy();
+    window.onInfoChange = onInfoChange;
+}
+
+AddHud();
+
 function executeFunctionWhen(fn, condition, name = "executeFunctionWhen", intervalTime = 50) {
     const startTime = performance.now();
 
@@ -1245,94 +1330,9 @@ const oldInfoCard = {
 
 oldInfoCard.hookAndReplaceNewInfoCard();
 
-    function onInfoChange(type, value) {
-        setTimeout(() => {
-            if (loadingNotification) {
-                loadingNotification.style.opacity = '0';
-                setTimeout(() => {
-                    if (loadingNotification && loadingNotification.parentNode) {
-                        loadingNotification.remove();
-                    }
-                }, 2500);
-                loadingNotification = null;
-            }
-        }, 1000);
-
-        if (updateFunctions[type]) {
-            updateFunctions[type](value);
-        }
-    }
-
-    function updateParam(paramClass, value) {
-        const paramElement = document.querySelector(`.Old-Fixed-Param.${paramClass}`);
-        if (paramElement) {
-            const progressBar = paramElement.querySelector(".Old-Progress__Values");
-            const valueText = paramElement.querySelector(".Old-Param-Values");
-            progressBar.style.width = `${value}%`;
-            valueText.textContent = value;
-        }
-    }
-
-    function initializeHudProxy() {
-        const checkInterval = setInterval(() => {
-            if (typeof window.interface === "function" && window.interface("Hud").info) {
-                clearInterval(checkInterval);
-                const hudInfo = window.interface("Hud").info;
-                const clonedHudInfo = JSON.parse(JSON.stringify(hudInfo));
-
-                window.interface("Hud").info = new Proxy(clonedHudInfo, {
-                    set(target, prop, value) {
-                        if (target[prop] !== value) {
-                            target[prop] = value;
-                            onInfoChange(prop, value);
-                        }
-                        return Reflect.set(target, prop, value);
-                    }
-                });
-
-                window.interface("Hud").setServer = (serverId) => {
-                    onInfoChange("server", serverId);
-                    window.interface("Hud").server = serverId;
-                };
-
-                window.interface("Hud").setBonus = (bonusValue) => {
-                    onInfoChange("bonus", bonusValue);
-                    window.interface("Hud").bonus = bonusValue;
-                };
-                window.interface("Hud").showGreenZoneTab = () => {
-                    onInfoChange("greenZone", true);
-                };
-                window.interface("Hud").hideGreenZoneTab = () => {
-                    onInfoChange("greenZone", false);
-                };
-
-                
-                createHud();
-
-                
-                const props = ['health', 'armour', 'hunger', 'breath', 'money', 'wanted', 'ammoInClip', 'totalAmmo', 'freeze', 'weapon', 'show'];
-                props.forEach(prop => {
-                    if (prop in hudInfo && updateFunctions[prop]) {
-                        updateFunctions[prop](hudInfo[prop]);
-                    }
-                });
-
-                if ('server' in window.interface("Hud")) updateFunctions.server(window.interface("Hud").server);
-                if ('bonus' in window.interface("Hud")) updateFunctions.bonus(window.interface("Hud").bonus);
-            }
-        }, 100);
-    }
-
-    initializeHudProxy();
-    window.onInfoChange = onInfoChange;
-}
-
-AddHud();
-
-
 let logoStyle = null;
 let logoWidth = 18; 
-let logoHeight = 6; 
+let logoHeight = 5; 
 
 function applyLogoSize(w = logoWidth, h = logoHeight) {
 
