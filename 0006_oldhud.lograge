@@ -1438,8 +1438,6 @@ zoneStyle.textContent += `
     display: flex;
     left: -4vh;
     bottom: -1vh;
-    align-items: center;
-    justify-content: center;
     position: relative;
     width: auto;
     height: auto;
