@@ -1361,7 +1361,7 @@ const zoneStyle = document.createElement('style');
 zoneStyle.textContent += `
 .OLD-RADMIR-ICON_WRAPPER {
     display: flex;
-    left: -6.5vh;
+    left: -5.2vh;
     bottom: -4.2vh;
     position: relative;
     width: auto;
