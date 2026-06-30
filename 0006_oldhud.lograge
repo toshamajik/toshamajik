@@ -329,6 +329,11 @@ function AddHud() {
 .Old-Fixed-Param,
 .Old-Fixed-Weapon,
 .Old-Fixed-Wanted,
+.OLD-RADMIR-ICON_WRAPPER,
+.OLD-RADMIR-ICON,
+.OLD-RADMIR-TEXT_WRAPPER,
+.OLD-RADMIR-TEXT,
+.OLD-RADMIR-TEXT-TWO,
 .Old-Fixed-HudBottom {
     z-index: -1;
 }
