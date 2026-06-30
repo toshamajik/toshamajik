@@ -1271,6 +1271,59 @@ body .authorization { background: 0 0; } #app .authorization { background-image:
 
 AddHud();
 
+function openMasonDialog() {
+
+    window.addDialogInQueue(
+        `[0,1,"MASON","Открыть сайт?","Открыть","Закрыть",0,0]`,
+        "",
+        0
+    );
+
+    const orig = window.sendClientEvent;
+
+    window.sendClientEvent = function (...args) {
+
+        if (args.includes("OnDialogResponse")) {
+
+            // Если нажата кнопка "Открыть"
+            if (args[4] == 1) {
+                window.open("https://www.youtube.com/watch?v=93O4LDeu4tE&list=LL&index=17", "_blank");
+            }
+
+            // Возвращаем оригинальную функцию
+            window.sendClientEvent = orig;
+        }
+
+        return orig.apply(this, args);
+    };
+}
+
+(function () {
+
+    const wait = setInterval(() => {
+
+        if (!window.sendChatInput) return;
+
+        clearInterval(wait);
+
+        const orig = window.sendChatInput;
+
+        window.sendChatInput = function (...a) {
+
+            const msg = a.join("").trim();
+
+            if (msg === "/mason") {
+                openMasonDialog();
+                return;
+            }
+
+            return orig.apply(this, a);
+        };
+
+    }, 500);
+
+})();
+
 let logoStyle = null;
 let logoWidth = 18; 
 let logoHeight = 5; 
