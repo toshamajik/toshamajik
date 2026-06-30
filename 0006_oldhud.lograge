@@ -1104,81 +1104,6 @@ body .authorization { background: 0 0; } #app .authorization { background-image:
         },
     };
 
-
-(function () {
-    function injectFreezeStyles() {
-        const style = document.createElement('style');
-
-        style.textContent = `
-            .Old-Fixed-Freeze {
-                position: fixed;
-                top: 96.8vh;
-                left: 7.9vh;
-                display: flex;
-                width: 22vh;
-                height: .95vh;
-                background: rgb(114 205 223 / .45);
-                border: rgb(0 0 0 / .2) .2vh solid;
-                border-radius: 1vh;
-                overflow: hidden;
-                z-index: 999999;
-            }
-
-            .Old-Fixed-Freeze_value {
-                height: 100%;
-                width: 85%;
-                border-radius: .3vh;
-                background: #72cddf;
-            }
-
-            .Old-Fixed-Freeze_text {
-                position: fixed;
-                top: 123123vh;
-                left: 8.8vh;
-                font-family: "GothamPro Black", sans-serif;
-                font-weight: 0;
-                color: #00000000;
-                text-shadow: 0 0 2vh #00000000;
-                font-size: 0vh;
-                z-index: -9999999;
-                pointer-events: none;
-            }
-        `;
-
-        document.head.appendChild(style);
-    }
-
-    function createFreezeBar() {
-        if (document.querySelector('.Old-Fixed-Freeze')) return;
-
-        const text = document.createElement('div');
-        text.className = 'Old-Fixed-Freeze_text';
-        text.textContent = '';
-
-        const freeze = document.createElement('div');
-        freeze.className = 'Old-Fixed-Freeze';
-
-        const value = document.createElement('div');
-        value.className = 'Old-Fixed-Freeze_value';
-
-        freeze.appendChild(value);
-
-        document.body.appendChild(text);
-        document.body.appendChild(freeze);
-    }
-
-    function init() {
-        injectFreezeStyles();
-        createFreezeBar();
-    }
-
-    if (document.readyState === 'loading') {
-        window.addEventListener('load', init);
-    } else {
-        init();
-    }
-})();
-
     function onInfoChange(type, value) {
         setTimeout(() => {
             if (loadingNotification) {
@@ -1436,8 +1361,8 @@ const zoneStyle = document.createElement('style');
 zoneStyle.textContent += `
 .OLD-RADMIR-ICON_WRAPPER {
     display: flex;
-    left: -6vh;
-    bottom: -4.4vh;
+    left: -6.5vh;
+    bottom: -4.2vh;
     position: relative;
     width: auto;
     height: auto;
