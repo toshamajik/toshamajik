@@ -1436,6 +1436,8 @@ const zoneStyle = document.createElement('style');
 zoneStyle.textContent += `
 .OLD-RADMIR-ICON_WRAPPER {
     display: flex;
+    left: 3vh;
+    bottom: 7vh;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -1443,8 +1445,6 @@ zoneStyle.textContent += `
     height: auto;
 }
 .OLD-RADMIR-ICON {
-    width: 4vh;
-    height: 4vh;
     display: block;
     object-fit: contain;
 }
